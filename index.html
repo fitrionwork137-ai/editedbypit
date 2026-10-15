@@ -1,16 +1,16 @@
+
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Fitriya Aini's portfolio featuring social media strategy and video editing.">
     <title>Fitriya Aini | Social Media Specialist & Video Editor</title>
-    <!-- Tailwind CSS -->
+
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <!-- FontAwesome for Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
+
     <script>
         tailwind.config = {
             theme: {
@@ -19,7 +19,7 @@
                         teal: {
                             400: '#2dd4bf',
                             500: '#14b8a6',
-                            600: '#0d9488',
+                            600: '#0d9488'
                         }
                     }
                 }
@@ -30,318 +30,405 @@
     <style>
         body {
             font-family: 'Inter', sans-serif;
-            background-color: #09090b; /* zinc-950 */
+            background-color: #09090b;
             color: #f4f4f5;
         }
-        
-        /* Custom scrollbar for dark theme */
+
         ::-webkit-scrollbar {
             width: 8px;
         }
+
         ::-webkit-scrollbar-track {
-            background: #18181b; 
+            background: #18181b;
         }
+
         ::-webkit-scrollbar-thumb {
-            background: #2dd4bf; 
+            background: #2dd4bf;
             border-radius: 4px;
         }
+
         ::-webkit-scrollbar-thumb:hover {
-            background: #14b8a6; 
+            background: #14b8a6;
         }
 
-        /* Bulletproof Iframe Container for 9:16 Vertical Video */
-        .gdrive-video-wrapper {
+        .video-wrapper {
             position: relative;
             width: 100%;
-            padding-bottom: 185%; 
+            aspect-ratio: 9 / 16;
             overflow: hidden;
-            background-color: #000;
+            background: #000;
         }
 
-        .gdrive-video-wrapper iframe {
+        .video-wrapper iframe {
             position: absolute;
-            top: 0;
-            left: 0;
+            inset: 0;
             width: 100%;
             height: 100%;
             border: 0;
         }
+
+        html {
+            scroll-padding-top: 80px;
+        }
     </style>
 </head>
+
 <body class="antialiased selection:bg-teal-500 selection:text-white flex flex-col min-h-screen">
 
     <!-- Navigation -->
-    <nav class="fixed w-full z-50 bg-black/80 backdrop-blur-md border-b border-zinc-800/80">
+    <nav class="fixed top-0 w-full z-50 bg-black/80 backdrop-blur-md border-b border-zinc-800/80">
         <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-            <span class="text-xl font-bold tracking-tighter text-white">Fitriya Aini.</span>
+            <a href="#home" class="text-xl font-bold tracking-tighter text-white">
+                Fitriya Aini.
+            </a>
+
             <div class="space-x-6 text-sm font-medium text-zinc-400 hidden sm:block">
                 <a href="#home" class="hover:text-teal-400 transition-colors">Home</a>
                 <a href="#works" class="hover:text-teal-400 transition-colors">Works</a>
                 <a href="#tools" class="hover:text-teal-400 transition-colors">Tools</a>
             </div>
+
+            <a href="mailto:fitrionwork137@gmail.com"
+               class="sm:hidden text-teal-400 text-sm font-semibold">
+                Contact
+            </a>
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <header id="home" class="flex-1 flex flex-col items-center justify-center min-h-[85vh] px-6 pt-24 pb-12 relative overflow-hidden">
-        <!-- Subtle background glow -->
-        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-teal-600/10 rounded-full blur-[120px] -z-10"></div>
-        
-        <div class="max-w-3xl mx-auto text-center z-10 mt-10">
-            <div class="inline-block mb-6 px-4 py-1.5 rounded-full border border-teal-500/30 bg-teal-500/10 text-xs font-semibold text-teal-400 tracking-wider uppercase">
-                Portfolio 2026
+    <main>
+        <!-- Hero Section -->
+        <header id="home" class="flex flex-col items-center justify-center min-h-[85vh] px-6 pt-28 pb-16 relative overflow-hidden">
+
+            <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-teal-600/10 rounded-full blur-[120px] pointer-events-none"></div>
+
+            <div class="max-w-3xl mx-auto text-center relative z-10 mt-8">
+
+                <div class="inline-block mb-6 px-4 py-1.5 rounded-full border border-teal-500/30 bg-teal-500/10 text-xs font-semibold text-teal-400 tracking-wider uppercase">
+                    Portfolio 2026
+                </div>
+
+                <h1 class="text-5xl md:text-7xl font-extrabold tracking-tight text-white mb-4">
+                    Fitriya Aini
+                </h1>
+
+                <h2 class="text-2xl md:text-3xl font-medium tracking-tight mb-8">
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-teal-300 to-teal-600">
+                        Social Media Specialist &amp; Video Editor
+                    </span>
+                </h2>
+
+                <p class="text-lg text-zinc-400 mb-10 leading-relaxed max-w-2xl mx-auto">
+                    Crafting engaging visual stories and strategic social media content. Over 4 years of experience turning ideas into captivating digital experiences.
+                </p>
+
+                <div class="flex flex-wrap items-center justify-center gap-4">
+
+                    <a href="mailto:fitrionwork137@gmail.com"
+                       class="flex items-center gap-2 px-6 py-3 rounded-full bg-teal-500 text-black font-bold hover:bg-teal-400 transition-all shadow-[0_0_20px_rgba(45,212,191,0.2)] transform hover:-translate-y-1">
+                        <i class="fas fa-envelope"></i>
+                        Email Me
+                    </a>
+
+                    <a href="https://wa.me/6285171715538"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       class="flex items-center gap-2 px-6 py-3 rounded-full bg-zinc-800/80 text-white font-semibold hover:bg-zinc-700 transition-all border border-zinc-700 hover:border-teal-500/50 transform hover:-translate-y-1">
+                        <i class="fab fa-whatsapp text-green-400"></i>
+                        WhatsApp
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/fitriya-aini-b0aa141a9/"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       class="flex items-center gap-2 px-6 py-3 rounded-full bg-zinc-800/80 text-white font-semibold hover:bg-zinc-700 transition-all border border-zinc-700 hover:border-teal-500/50 transform hover:-translate-y-1">
+                        <i class="fab fa-linkedin text-blue-400"></i>
+                        LinkedIn
+                    </a>
+
+                </div>
             </div>
-            <h1 class="text-5xl md:text-7xl font-extrabold tracking-tight text-white mb-4">
-                Fitriya Aini
-            </h1>
-            <h2 class="text-2xl md:text-3xl font-medium tracking-tight mb-8">
-                <span class="text-transparent bg-clip-text bg-gradient-to-r from-teal-300 to-teal-600">Social Media Specialist & Video Editor</span>
-            </h2>
-            <p class="text-lg text-zinc-400 mb-10 leading-relaxed max-w-2xl mx-auto">
-                Crafting engaging visual stories and strategic social media content. Over 4 years of experience turning ideas into captivating digital experiences.
-            </p>
-            
-            <!-- Contact Links -->
-            <div class="flex flex-wrap items-center justify-center gap-4">
-                <a href="mailto:fitrionwork137@gmail.com" class="flex items-center gap-2 px-6 py-3 rounded-full bg-teal-500 text-black font-bold hover:bg-teal-400 transition-all shadow-[0_0_20px_rgba(45,212,191,0.2)] transform hover:-translate-y-1">
-                    <i class="fas fa-envelope"></i> fitrionwork137@gmail.com
-                </a>
-                <a href="https://wa.me/6285171715538" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 px-6 py-3 rounded-full bg-zinc-800/80 text-white font-semibold hover:bg-zinc-700 transition-all border border-zinc-700 hover:border-teal-500/50 transform hover:-translate-y-1">
-                    <i class="fab fa-whatsapp text-green-400"></i> +62 851 7171 5538
-                </a>
-                <a href="https://www.linkedin.com/in/fitriya-aini-b0aa141a9/" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 px-6 py-3 rounded-full bg-zinc-800/80 text-white font-semibold hover:bg-zinc-700 transition-all border border-zinc-700 hover:border-teal-500/50 transform hover:-translate-y-1">
-                    <i class="fab fa-linkedin text-blue-400"></i> LinkedIn
-                </a>
+        </header>
+
+        <!-- Portfolio Section -->
+        <section id="works" class="py-24 px-6 bg-zinc-900/30 border-t border-zinc-800">
+
+            <div class="max-w-7xl mx-auto">
+
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">
+                        Selected Works
+                    </h2>
+                    <p class="text-zinc-400 max-w-xl mx-auto">
+                        A showcase of my video editing and social media projects, optimized for vertical viewing.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+
+                    <!-- Project 1 -->
+                    <article class="group flex flex-col bg-zinc-900 border border-zinc-800 rounded-2xl overflow-hidden hover:border-teal-500/50 transition-all duration-300 shadow-lg">
+                        <div class="video-wrapper border-b border-zinc-800">
+                            <iframe src="https://www.youtube.com/embed/T0u5eju8OYg" title="Talking Head and Storytelling" loading="lazy" allowfullscreen></iframe>
+                        </div>
+                        <div class="p-6 flex flex-col flex-grow">
+                            <h3 class="text-base font-bold text-teal-400 mb-3">Talking Head &amp; Storytelling</h3>
+                            <p class="text-sm text-zinc-400 leading-relaxed">
+                                An engaging review edited from a long-form shoot, using dynamic cuts and clear storytelling to keep viewers interested.
+                            </p>
+                        </div>
+                    </article>
+
+                    <!-- Project 2 -->
+                    <article class="group flex flex-col bg-zinc-900 border border-zinc-800 rounded-2xl overflow-hidden hover:border-teal-500/50 transition-all duration-300 shadow-lg">
+                        <div class="video-wrapper border-b border-zinc-800">
+                            <iframe src="https://www.youtube.com/embed/cj53XiQWZC8" title="Q&A Service Breakdown" loading="lazy" allowfullscreen></iframe>
+                        </div>
+                        <div class="p-6 flex flex-col flex-grow">
+                            <h3 class="text-base font-bold text-teal-400 mb-3">Q&amp;A Service Breakdown</h3>
+                            <p class="text-sm text-zinc-400 leading-relaxed">
+                                A conversational talking-head edit that answers common client questions with clean captions, smooth pacing, and visual inserts.
+                            </p>
+                        </div>
+                    </article>
+
+                    <!-- Project 3 -->
+                    <article class="group flex flex-col bg-zinc-900 border border-zinc-800 rounded-2xl overflow-hidden hover:border-teal-500/50 transition-all duration-300 shadow-lg">
+                        <div class="video-wrapper border-b border-zinc-800">
+                            <iframe src="https://www.youtube.com/embed/mjNv7qG3KrE" title="Cinematic Visual and Audio Sync" loading="lazy" allowfullscreen></iframe>
+                        </div>
+                        <div class="p-6 flex flex-col flex-grow">
+                            <h3 class="text-base font-bold text-teal-400 mb-3">Cinematic Visual &amp; Audio Sync</h3>
+                            <p class="text-sm text-zinc-400 leading-relaxed">
+                                A visual-led edit built around music, carefully timed cuts, and fluid transitions to create a cohesive mood.
+                            </p>
+                        </div>
+                    </article>
+
+                    <!-- Project 4 -->
+                    <article class="group flex flex-col bg-zinc-900 border border-zinc-800 rounded-2xl overflow-hidden hover:border-teal-500/50 transition-all duration-300 shadow-lg">
+                        <div class="video-wrapper border-b border-zinc-800">
+                            <iframe src="https://www.youtube.com/embed/mJ932BvgqFs" title="Mini Travel Vlog" loading="lazy" allowfullscreen></iframe>
+                        </div>
+                        <div class="p-6 flex flex-col flex-grow">
+                            <h3 class="text-base font-bold text-teal-400 mb-3">Mini Travel Vlog</h3>
+                            <p class="text-sm text-zinc-400 leading-relaxed">
+                                A road-trip story combining scenic footage and voice-over narration to create an immersive travel experience.
+                            </p>
+                        </div>
+                    </article>
+
+                    <!-- Project 5 -->
+                    <article class="group flex flex-col bg-zinc-900 border border-zinc-800 rounded-2xl overflow-hidden hover:border-teal-500/50 transition-all duration-300 shadow-lg">
+                        <div class="video-wrapper border-b border-zinc-800">
+                            <iframe src="https://www.youtube.com/embed/nH8JNL-PJqg" title="Trendy Social Media Hook" loading="lazy" allowfullscreen></iframe>
+                        </div>
+                        <div class="p-6 flex flex-col flex-grow">
+                            <h3 class="text-base font-bold text-teal-400 mb-3">Trendy Social Media Hook</h3>
+                            <p class="text-sm text-zinc-400 leading-relaxed">
+                                A fast-paced short-form edit designed to grab attention quickly with punchy cuts and platform-friendly pacing.
+                            </p>
+                        </div>
+                    </article>
+
+                    <!-- Project 6 -->
+                    <article class="group flex flex-col bg-zinc-900 border border-zinc-800 rounded-2xl overflow-hidden hover:border-teal-500/50 transition-all duration-300 shadow-lg">
+                        <div class="video-wrapper border-b border-zinc-800">
+                            <iframe src="https://www.youtube.com/embed/FYUxdnw-jWs" title="Brand Promotional Edit" loading="lazy" allowfullscreen></iframe>
+                        </div>
+                        <div class="p-6 flex flex-col flex-grow">
+                            <h3 class="text-base font-bold text-teal-400 mb-3">Brand Promotional Edit</h3>
+                            <p class="text-sm text-zinc-400 leading-relaxed">
+                                A promotional video highlighting product features and brand identity through clear visuals and purposeful editing.
+                            </p>
+                        </div>
+                    </article>
+
+                    <!-- Project 7 -->
+                    <article class="group flex flex-col bg-zinc-900 border border-zinc-800 rounded-2xl overflow-hidden hover:border-teal-500/50 transition-all duration-300 shadow-lg">
+                        <div class="video-wrapper border-b border-zinc-800">
+                            <iframe src="https://www.youtube.com/embed/x0uS6wW15a8" title="Aesthetic Lifestyle Visuals" loading="lazy" allowfullscreen></iframe>
+                        </div>
+                        <div class="p-6 flex flex-col flex-grow">
+                            <h3 class="text-base font-bold text-teal-400 mb-3">Aesthetic Lifestyle Visuals</h3>
+                            <p class="text-sm text-zinc-400 leading-relaxed">
+                                Lifestyle footage shaped by considered pacing, subtle color grading, and music to create a relaxed, relatable feel.
+                            </p>
+                        </div>
+                    </article>
+
+                    <!-- Project 8 -->
+                    <article class="group flex flex-col bg-zinc-900 border border-zinc-800 rounded-2xl overflow-hidden hover:border-teal-500/50 transition-all duration-300 shadow-lg">
+                        <div class="video-wrapper border-b border-zinc-800">
+                            <iframe src="https://www.youtube.com/embed/sWjdhUHl1r8" title="High-Impact Commercial" loading="lazy" allowfullscreen></iframe>
+                        </div>
+                        <div class="p-6 flex flex-col flex-grow">
+                            <h3 class="text-base font-bold text-teal-400 mb-3">High-Impact Commercial</h3>
+                            <p class="text-sm text-zinc-400 leading-relaxed">
+                                A punchy commercial edit combining bold transitions, crisp sound design, and strong visuals for a polished finish.
+                            </p>
+                        </div>
+                    </article>
+
+                    <!-- Project 9 -->
+                    <article class="group flex flex-col bg-zinc-900 border border-zinc-800 rounded-2xl overflow-hidden hover:border-teal-500/50 transition-all duration-300 shadow-lg">
+                        <div class="video-wrapper border-b border-zinc-800">
+                            <iframe src="https://www.youtube.com/embed/6BtcMw2gqLM" title="Creative Narrative Edit" loading="lazy" allowfullscreen></iframe>
+                        </div>
+                        <div class="p-6 flex flex-col flex-grow">
+                            <h3 class="text-base font-bold text-teal-400 mb-3">Creative Narrative Edit</h3>
+                            <p class="text-sm text-zinc-400 leading-relaxed">
+                                A story-driven edit focused on visual continuity, thoughtful pacing, and color correction to bring the footage together.
+                            </p>
+                        </div>
+                    </article>
+
+                    <!-- Project 10 -->
+                    <article class="group flex flex-col bg-zinc-900 border border-zinc-800 rounded-2xl overflow-hidden hover:border-teal-500/50 transition-all duration-300 shadow-lg">
+                        <div class="video-wrapper border-b border-zinc-800">
+                            <iframe src="https://www.youtube.com/embed/FB-0aJwQO1w" title="Dynamic Product Showcase" loading="lazy" allowfullscreen></iframe>
+                        </div>
+                        <div class="p-6 flex flex-col flex-grow">
+                            <h3 class="text-base font-bold text-teal-400 mb-3">Dynamic Product Showcase</h3>
+                            <p class="text-sm text-zinc-400 leading-relaxed">
+                                A product-focused edit using clean text overlays, upbeat music, and snappy transitions to present key details clearly.
+                            </p>
+                        </div>
+                    </article>
+
+                    <!-- Project 11 -->
+                    <article class="group flex flex-col bg-zinc-900 border border-zinc-800 rounded-2xl overflow-hidden hover:border-teal-500/50 transition-all duration-300 shadow-lg">
+                        <div class="video-wrapper border-b border-zinc-800">
+                            <iframe src="https://www.youtube.com/embed/5TAB1MiEVzQ" title="Behind the Scenes Vlog" loading="lazy" allowfullscreen></iframe>
+                        </div>
+                        <div class="p-6 flex flex-col flex-grow">
+                            <h3 class="text-base font-bold text-teal-400 mb-3">Behind-the-Scenes Vlog</h3>
+                            <p class="text-sm text-zinc-400 leading-relaxed">
+                                A behind-the-scenes edit that brings candid moments together with polished pacing to give viewers a closer look.
+                            </p>
+                        </div>
+                    </article>
+
+                    <!-- Project 12 -->
+                    <article class="group flex flex-col bg-zinc-900 border border-zinc-800 rounded-2xl overflow-hidden hover:border-teal-500/50 transition-all duration-300 shadow-lg">
+                        <div class="video-wrapper border-b border-zinc-800">
+                            <iframe src="https://www.youtube.com/embed/szPdD9cscmU" title="Bite-Sized Educational Reel" loading="lazy" allowfullscreen></iframe>
+                        </div>
+                        <div class="p-6 flex flex-col flex-grow">
+                            <h3 class="text-base font-bold text-teal-400 mb-3">Bite-Sized Educational Reel</h3>
+                            <p class="text-sm text-zinc-400 leading-relaxed">
+                                An informative short-form video that breaks a topic into easy-to-follow segments with clear on-screen graphics.
+                            </p>
+                        </div>
+                    </article>
+
+                    <!-- Project 13 -->
+                    <article class="group flex flex-col bg-zinc-900 border border-zinc-800 rounded-2xl overflow-hidden hover:border-teal-500/50 transition-all duration-300 shadow-lg">
+                        <div class="video-wrapper border-b border-zinc-800">
+                            <iframe src="https://www.youtube.com/embed/7bGGDNk2Jvg" title="Short-Form Video Editing" loading="lazy" allowfullscreen></iframe>
+                        </div>
+                        <div class="p-6 flex flex-col flex-grow">
+                            <h3 class="text-base font-bold text-teal-400 mb-3">Short-Form Video Editing</h3>
+                            <p class="text-sm text-zinc-400 leading-relaxed">
+                                A social-first video edit focused on engaging visuals, smooth pacing, and a polished finish for short-form platforms.
+                            </p>
+                        </div>
+                    </article>
+
+                    <!-- Project 14 -->
+                    <article class="group flex flex-col bg-zinc-900 border border-zinc-800 rounded-2xl overflow-hidden hover:border-teal-500/50 transition-all duration-300 shadow-lg">
+                        <div class="video-wrapper border-b border-zinc-800">
+                            <iframe src="https://www.youtube.com/embed/FHZPbir6TUU" title="Creative Social Media Video" loading="lazy" allowfullscreen></iframe>
+                        </div>
+                        <div class="p-6 flex flex-col flex-grow">
+                            <h3 class="text-base font-bold text-teal-400 mb-3">Creative Social Media Video</h3>
+                            <p class="text-sm text-zinc-400 leading-relaxed">
+                                A creative video project combining thoughtful visual composition and engaging editing for social media platforms.
+                            </p>
+                        </div>
+                    </article>
+
+                </div>
             </div>
-        </div>
-    </header>
+        </section>
 
-    <!-- Portfolio Section -->
-    <section id="works" class="py-24 px-6 bg-zinc-900/30 border-t border-zinc-800">
-        <div class="max-w-7xl mx-auto">
-            <div class="text-center mb-16">
-                <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Selected Works</h2>
-                <p class="text-zinc-400 max-w-xl mx-auto">A showcase of my recent video editing and social media projects, optimized for vertical viewing.</p>
+        <!-- Tools & Equipment -->
+        <section id="tools" class="py-24 px-6 border-t border-zinc-800 relative">
+            <div class="max-w-5xl mx-auto">
+
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">
+                        Tools &amp; Equipment
+                    </h2>
+                    <p class="text-zinc-400 max-w-xl mx-auto">
+                        The software and equipment I use to create polished, high-quality content.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+                    <!-- Tool 1 -->
+                    <article class="relative group bg-zinc-900/80 border border-zinc-700/50 rounded-2xl p-8 hover:bg-zinc-800 hover:border-yellow-500/50 transition-all duration-300 transform hover:-translate-y-2 overflow-hidden flex flex-col items-center justify-center text-center h-64">
+
+                        <div class="absolute top-0 right-0 bg-gradient-to-r from-yellow-400 to-yellow-600 text-black text-xs font-bold px-4 py-1.5 rounded-bl-xl shadow-lg z-10 tracking-widest uppercase">
+                            Pro Version
+                        </div>
+
+                        <div class="w-16 h-16 rounded-2xl bg-zinc-950 flex items-center justify-center mb-5 border border-zinc-800 text-white">
+                            <i class="fas fa-play-circle text-3xl"></i>
+                        </div>
+
+                        <h3 class="text-xl font-bold text-white mb-2">CapCut Pro</h3>
+                        <p class="text-sm text-zinc-400">
+                            Professional editing tools for polished, platform-ready videos.
+                        </p>
+                    </article>
+
+                    <!-- Tool 2 -->
+                    <article class="relative group bg-zinc-900/80 border border-zinc-700/50 rounded-2xl p-8 hover:bg-zinc-800 hover:border-gray-300/50 transition-all duration-300 transform hover:-translate-y-2 overflow-hidden flex flex-col items-center justify-center text-center h-64">
+
+                        <div class="w-16 h-16 rounded-2xl bg-zinc-950 flex items-center justify-center mb-5 border border-zinc-800 text-gray-300">
+                            <i class="fab fa-apple text-3xl"></i>
+                        </div>
+
+                        <h3 class="text-xl font-bold text-white mb-2">MacBook Air M1</h3>
+                        <p class="text-sm text-zinc-400">
+                            A reliable setup for editing, content production, and everyday creative work.
+                        </p>
+                    </article>
+
+                    <!-- Tool 3 -->
+                    <article class="relative group bg-zinc-900/80 border border-zinc-700/50 rounded-2xl p-8 hover:bg-zinc-800 hover:border-teal-500/50 transition-all duration-300 transform hover:-translate-y-2 overflow-hidden flex flex-col items-center justify-center text-center h-64">
+
+                        <div class="w-16 h-16 rounded-2xl bg-zinc-950 flex items-center justify-center mb-5 border border-zinc-800 text-teal-400">
+                            <i class="fas fa-microphone-lines text-2xl"></i>
+                        </div>
+
+                        <h3 class="text-xl font-bold text-white mb-2">Hollyland Lark M2</h3>
+                        <p class="text-sm text-zinc-400">
+                            Wireless microphone for clear audio capture during content shoots.
+                        </p>
+                    </article>
+
+                </div>
             </div>
-
-            <!-- Video Grid -->
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-                
-                <!-- Project 1 -->
-                <div class="group flex flex-col bg-zinc-900 border border-zinc-800 rounded-2xl overflow-hidden hover:border-teal-500/50 transition-all duration-300 shadow-lg hover:shadow-teal-900/20">
-                    <div class="gdrive-video-wrapper border-b border-zinc-800">
-                        <iframe src="https://www.youtube.com/embed/T0u5eju8OYg" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                    </div>
-                    <div class="p-6 flex flex-col flex-grow">
-                        <h3 class="text-base font-bold text-teal-400 mb-3 leading-tight group-hover:text-teal-300 transition-colors">Talking Head & Storytelling</h3>
-                        <p class="text-sm text-zinc-400 leading-relaxed">
-                            An engaging review crafted from a 3-hour shoot, utilizing dynamic cuts and punchy storytelling to maintain maximum viewer retention.
-                        </p>
-                    </div>
-                </div>
-
-                <!-- Project 2 -->
-                <div class="group flex flex-col bg-zinc-900 border border-zinc-800 rounded-2xl overflow-hidden hover:border-teal-500/50 transition-all duration-300 shadow-lg hover:shadow-teal-900/20">
-                    <div class="gdrive-video-wrapper border-b border-zinc-800">
-                        <iframe src="https://www.youtube.com/embed/cj53XiQWZC8" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                    </div>
-                    <div class="p-6 flex flex-col flex-grow">
-                        <h3 class="text-base font-bold text-teal-400 mb-3 leading-tight group-hover:text-teal-300 transition-colors">Q&A Service Breakdown</h3>
-                        <p class="text-sm text-zinc-400 leading-relaxed">
-                            A natural, conversational talking-head format designed to address client FAQs with smooth text animations and visual inserts.
-                        </p>
-                    </div>
-                </div>
-
-                <!-- Project 3 -->
-                <div class="group flex flex-col bg-zinc-900 border border-zinc-800 rounded-2xl overflow-hidden hover:border-teal-500/50 transition-all duration-300 shadow-lg hover:shadow-teal-900/20">
-                    <div class="gdrive-video-wrapper border-b border-zinc-800">
-                        <iframe src="https://www.youtube.com/embed/mjNv7qG3KrE" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                    </div>
-                    <div class="p-6 flex flex-col flex-grow">
-                        <h3 class="text-base font-bold text-teal-400 mb-3 leading-tight group-hover:text-teal-300 transition-colors">Cinematic Visual & Audio Sync</h3>
-                        <p class="text-sm text-zinc-400 leading-relaxed">
-                            An aesthetic visual piece that relies on precise beat-syncing and fluid transitions to highlight mood and choreography.
-                        </p>
-                    </div>
-                </div>
-
-                <!-- Project 4 -->
-                <div class="group flex flex-col bg-zinc-900 border border-zinc-800 rounded-2xl overflow-hidden hover:border-teal-500/50 transition-all duration-300 shadow-lg hover:shadow-teal-900/20">
-                    <div class="gdrive-video-wrapper border-b border-zinc-800">
-                        <iframe src="https://www.youtube.com/embed/mJ932BvgqFs" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                    </div>
-                    <div class="p-6 flex flex-col flex-grow">
-                        <h3 class="text-base font-bold text-teal-400 mb-3 leading-tight group-hover:text-teal-300 transition-colors">Mini Travel Vlog</h3>
-                        <p class="text-sm text-zinc-400 leading-relaxed">
-                            A spontaneous road trip vlog combining scenic visuals with compelling voice-over narration for an immersive storytelling experience.
-                        </p>
-                    </div>
-                </div>
-
-                <!-- Project 5 -->
-                <div class="group flex flex-col bg-zinc-900 border border-zinc-800 rounded-2xl overflow-hidden hover:border-teal-500/50 transition-all duration-300 shadow-lg hover:shadow-teal-900/20">
-                    <div class="gdrive-video-wrapper border-b border-zinc-800">
-                        <iframe src="https://www.youtube.com/embed/nH8JNL-PJqg" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                    </div>
-                    <div class="p-6 flex flex-col flex-grow">
-                        <h3 class="text-base font-bold text-teal-400 mb-3 leading-tight group-hover:text-teal-300 transition-colors">Trendy Social Media Hook</h3>
-                        <p class="text-sm text-zinc-400 leading-relaxed">
-                            Dynamic short-form content engineered with fast-paced cuts to capture attention and maximize organic engagement instantly.
-                        </p>
-                    </div>
-                </div>
-
-                <!-- Project 6 -->
-                <div class="group flex flex-col bg-zinc-900 border border-zinc-800 rounded-2xl overflow-hidden hover:border-teal-500/50 transition-all duration-300 shadow-lg hover:shadow-teal-900/20">
-                    <div class="gdrive-video-wrapper border-b border-zinc-800">
-                        <iframe src="https://www.youtube.com/embed/FYUxdnw-jWs" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                    </div>
-                    <div class="p-6 flex flex-col flex-grow">
-                        <h3 class="text-base font-bold text-teal-400 mb-3 leading-tight group-hover:text-teal-300 transition-colors">Brand Promotional Edit</h3>
-                        <p class="text-sm text-zinc-400 leading-relaxed">
-                            A high-energy promotional video highlighting core product features and brand identity, optimized for digital ad conversions.
-                        </p>
-                    </div>
-                </div>
-
-                <!-- Project 7 -->
-                <div class="group flex flex-col bg-zinc-900 border border-zinc-800 rounded-2xl overflow-hidden hover:border-teal-500/50 transition-all duration-300 shadow-lg hover:shadow-teal-900/20">
-                    <div class="gdrive-video-wrapper border-b border-zinc-800">
-                        <iframe src="https://www.youtube.com/embed/x0uS6wW15a8" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                    </div>
-                    <div class="p-6 flex flex-col flex-grow">
-                        <h3 class="text-base font-bold text-teal-400 mb-3 leading-tight group-hover:text-teal-300 transition-colors">Aesthetic Lifestyle Visuals</h3>
-                        <p class="text-sm text-zinc-400 leading-relaxed">
-                            Beautifully paced lifestyle footage enhanced with soft color grading and rhythmic editing to evoke a calming, relatable vibe.
-                        </p>
-                    </div>
-                </div>
-
-                <!-- Project 8 -->
-                <div class="group flex flex-col bg-zinc-900 border border-zinc-800 rounded-2xl overflow-hidden hover:border-teal-500/50 transition-all duration-300 shadow-lg hover:shadow-teal-900/20">
-                    <div class="gdrive-video-wrapper border-b border-zinc-800">
-                        <iframe src="https://www.youtube.com/embed/sWjdhUHl1r8" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                    </div>
-                    <div class="p-6 flex flex-col flex-grow">
-                        <h3 class="text-base font-bold text-teal-400 mb-3 leading-tight group-hover:text-teal-300 transition-colors">High-Impact Commercial</h3>
-                        <p class="text-sm text-zinc-400 leading-relaxed">
-                            Fast-paced commercial video utilizing bold transitions, crisp sound design, and strong visual appeal for rapid viewer retention.
-                        </p>
-                    </div>
-                </div>
-
-                <!-- Project 9 -->
-                <div class="group flex flex-col bg-zinc-900 border border-zinc-800 rounded-2xl overflow-hidden hover:border-teal-500/50 transition-all duration-300 shadow-lg hover:shadow-teal-900/20">
-                    <div class="gdrive-video-wrapper border-b border-zinc-800">
-                        <iframe src="https://www.youtube.com/embed/6BtcMw2gqLM" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                    </div>
-                    <div class="p-6 flex flex-col flex-grow">
-                        <h3 class="text-base font-bold text-teal-400 mb-3 leading-tight group-hover:text-teal-300 transition-colors">Creative Narrative Edit</h3>
-                        <p class="text-sm text-zinc-400 leading-relaxed">
-                            A visually engaging project showcasing creative pacing, color correction, and strong structural storytelling elements.
-                        </p>
-                    </div>
-                </div>
-
-                <!-- Project 10 -->
-                <div class="group flex flex-col bg-zinc-900 border border-zinc-800 rounded-2xl overflow-hidden hover:border-teal-500/50 transition-all duration-300 shadow-lg hover:shadow-teal-900/20">
-                    <div class="gdrive-video-wrapper border-b border-zinc-800">
-                        <iframe src="https://www.youtube.com/embed/FB-0aJwQO1w" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                    </div>
-                    <div class="p-6 flex flex-col flex-grow">
-                        <h3 class="text-base font-bold text-teal-400 mb-3 leading-tight group-hover:text-teal-300 transition-colors">Dynamic Product Showcase</h3>
-                        <p class="text-sm text-zinc-400 leading-relaxed">
-                            A highly engaging product showcase edit featuring snappy transitions, clean text overlays, and upbeat music to highlight key details.
-                        </p>
-                    </div>
-                </div>
-
-                <!-- Project 11 -->
-                <div class="group flex flex-col bg-zinc-900 border border-zinc-800 rounded-2xl overflow-hidden hover:border-teal-500/50 transition-all duration-300 shadow-lg hover:shadow-teal-900/20">
-                    <div class="gdrive-video-wrapper border-b border-zinc-800">
-                        <iframe src="https://www.youtube.com/embed/5TAB1MiEVzQ" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                    </div>
-                    <div class="p-6 flex flex-col flex-grow">
-                        <h3 class="text-base font-bold text-teal-400 mb-3 leading-tight group-hover:text-teal-300 transition-colors">Behind The Scenes Vlog</h3>
-                        <p class="text-sm text-zinc-400 leading-relaxed">
-                            A captivating behind-the-scenes look that builds audience connection through raw footage blended with polished edits.
-                        </p>
-                    </div>
-                </div>
-
-                <!-- Project 12 -->
-                <div class="group flex flex-col bg-zinc-900 border border-zinc-800 rounded-2xl overflow-hidden hover:border-teal-500/50 transition-all duration-300 shadow-lg hover:shadow-teal-900/20">
-                    <div class="gdrive-video-wrapper border-b border-zinc-800">
-                        <iframe src="https://www.youtube.com/embed/szPdD9cscmU" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                    </div>
-                    <div class="p-6 flex flex-col flex-grow">
-                        <h3 class="text-base font-bold text-teal-400 mb-3 leading-tight group-hover:text-teal-300 transition-colors">Bite-Sized Educational Reel</h3>
-                        <p class="text-sm text-zinc-400 leading-relaxed">
-                            Informative short-form video broken down into digestible, easy-to-follow segments paired with dynamic on-screen graphics.
-                        </p>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <!-- Tools & Equipment Section -->
-    <section id="tools" class="py-24 px-6 border-t border-zinc-800 relative">
-        <div class="max-w-5xl mx-auto">
-            <div class="text-center mb-16">
-                <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Tools & Equipment</h2>
-                <p class="text-zinc-400 max-w-xl mx-auto">Professional gear and software I invest in to deliver high-quality, polished content.</p>
-            </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                
-                <!-- Tool 1: CapCut PRO -->
-                <div class="relative group bg-zinc-900/80 border border-zinc-700/50 rounded-2xl p-8 hover:bg-zinc-800 hover:border-yellow-500/50 transition-all duration-300 transform hover:-translate-y-2 overflow-hidden flex flex-col items-center justify-center text-center h-64">
-                    <div class="absolute top-0 right-0 bg-gradient-to-r from-yellow-400 to-yellow-600 text-black text-xs font-bold px-4 py-1.5 rounded-bl-xl shadow-lg z-10 tracking-widest uppercase">
-                        PRO Version
-                    </div>
-                    <div class="w-16 h-16 rounded-2xl bg-zinc-950 flex items-center justify-center mb-5 shadow-inner border border-zinc-800 text-white">
-                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-8 h-8">
-                            <path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM10 16.5V7.5L16 12L10 16.5Z" fill="currentColor"/>
-                        </svg>
-                    </div>
-                    <h3 class="text-xl font-bold text-white mb-2">CapCut</h3>
-                    <p class="text-sm text-zinc-400">Premium editing capabilities, zero watermarks.</p>
-                </div>
-
-                <!-- Tool 2: MacBook M1 -->
-                <div class="relative group bg-zinc-900/80 border border-zinc-700/50 rounded-2xl p-8 hover:bg-zinc-800 hover:border-gray-300/50 transition-all duration-300 transform hover:-translate-y-2 overflow-hidden flex flex-col items-center justify-center text-center h-64">
-                    <div class="w-16 h-16 rounded-2xl bg-zinc-950 flex items-center justify-center mb-5 shadow-inner border border-zinc-800 text-gray-300">
-                        <i class="fab fa-apple text-3xl"></i>
-                    </div>
-                    <h3 class="text-xl font-bold text-white mb-2">MacBook M1</h3>
-                    <p class="text-sm text-zinc-400">High-performance silicon for seamless 4K rendering.</p>
-                </div>
-
-                <!-- Tool 3: Hollyland Lark M2 -->
-                <div class="relative group bg-zinc-900/80 border border-zinc-700/50 rounded-2xl p-8 hover:bg-zinc-800 hover:border-teal-500/50 transition-all duration-300 transform hover:-translate-y-2 overflow-hidden flex flex-col items-center justify-center text-center h-64">
-                    <div class="w-16 h-16 rounded-2xl bg-zinc-950 flex items-center justify-center mb-5 shadow-inner border border-zinc-800 text-teal-400">
-                        <i class="fas fa-microphone-lines text-2xl"></i>
-                    </div>
-                    <h3 class="text-xl font-bold text-white mb-2">Hollyland Lark M2</h3>
-                    <p class="text-sm text-zinc-400">Crystal-clear wireless audio for pro shoots.</p>
-                </div>
-
-            </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
     <!-- Footer -->
     <footer class="bg-black py-10 border-t border-zinc-900 mt-auto">
         <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-4">
+
             <div class="text-center md:text-left">
                 <h4 class="text-xl font-bold text-white">Fitriya Aini.</h4>
+                <p class="text-sm text-zinc-500 mt-1">
+                    Social Media Specialist &amp; Video Editor
+                </p>
             </div>
-            <div class="flex items-center gap-2">
-                <p class="text-sm text-zinc-500">&copy; 2026 Fitriya Aini. All rights reserved.</p>
-            </div>
+
+            <p class="text-sm text-zinc-500">
+                &copy; 2026 Fitriya Aini. All rights reserved.
+            </p>
+
         </div>
     </footer>
 
